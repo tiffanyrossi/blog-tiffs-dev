@@ -1,0 +1,43 @@
+.container {
+  max-width: 60rem;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+  
+.backToHome {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.profilePhoto {
+  float: right;
+  margin: 0 15px;
+  border-radius: 500px;
+}
+
+.icon {
+  font-size: 1.1em;
+  line-height: inherit !important;
+  vertical-align:sub;
+  margin-right: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin-left: 0px;
+  }
+}

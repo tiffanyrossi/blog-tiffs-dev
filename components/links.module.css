@@ -1,0 +1,96 @@
+.container {
+max-width: 40rem;
+padding: 0 1rem;
+margin: 3rem auto 6rem;
+}
+
+.header {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.footer {
+width: 100%;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+.headingLg {
+font-size: 1.5rem;
+line-height: 0.5;
+}
+
+.headingMd {
+font-size: 1.2rem;
+line-height: 0.8;
+}
+
+.pinkIcon {
+    border: none;
+    background: #fff;
+    color: deeppink;
+    padding: 7px;
+    font-size: 50px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease; 
+    vertical-align: bottom;
+
+}
+  
+.pinkIcon:hover {
+    color: #fff;
+    border: deeppink solid 1px;
+    background: deeppink;
+}
+
+.socialIcon {
+    font-size: 1.2em;
+    line-height: inherit !important;
+    vertical-align:sub;
+}
+
+.navList {
+    width: 100%;
+}
+
+.navList ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navList ul li {
+    --c: black;
+    color: var(--c);
+    font-size: 1.2em;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+.navList ul li:hover {
+    color: deeppink;
+    border-color: deeppink;
+}
+
+.navList a {
+    color: deeppink;
+}
+
+.navList a:hover {
+    text-decoration: none;
+    color: white;
+}
