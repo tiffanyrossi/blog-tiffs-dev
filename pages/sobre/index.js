@@ -3,6 +3,8 @@ import { FaInstagram, FaJava, FaLinkedin, FaTwitter } from 'react-icons/fa6';
 import styles from '../../components/layout.module.css';
 import Link from "next/link";
 import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import photo from 'public/images/foto.jpeg';
 
 const siteTitle = "Sobre";
 
@@ -10,14 +12,16 @@ export default function Sobre() {
     return (
         <Layout siteTitle={siteTitle}>
             <h2>[tiffany rossi]</h2>
-            <Image
+            <ExportedImage
                     priority
-                    src="/images/foto.jpeg"
+                    src={photo}
+                    placeholder="empty"
                     className={styles.profilePhoto}
                     width={250}
                     height={250}
                     alt="Tiffany Rossi"
-                />            <p>
+                />
+            <p>
                 oi! eu sou a Tiffany, <strong>desenvolvedora full-stack</strong>. em 2022, me formei em <i>desenvolvimento back-end</i> pela UNOPAR, mas logo no primeiro estágio descobri que gosto mesmo é de desenvolver aplicações do início ao fim - ou do front ao back end :)
             </p>
             <p>

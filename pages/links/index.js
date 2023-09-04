@@ -4,6 +4,9 @@ import utilStyles from '../../styles/utils.module.css';
 import Link from 'next/link';
 import styles from '../../components/links.module.css';
 import { FaInstagram, FaGithub, FaTwitter, FaDev, FaLinkedin, FaStar, FaEnvelope, FaRegFile, FaFile } from 'react-icons/fa6';
+import ExportedImage from 'next-image-export-optimizer';
+import profilePic from 'public/images/avatar.png';
+
 
 export const siteDescription = "";
 export const siteName = "Tiffany Rossi - Desenvolvedora";
@@ -25,9 +28,10 @@ export default function MeusLinks() {
             </Head>
 
             <header className={styles.header}>
-                <Image
+                <ExportedImage
                     priority
-                    src="/images/avatar.png"
+                    src={profilePic}
+                    placeholder="empty"
                     className={utilStyles.borderCircle}
                     width={150}
                     height={150}

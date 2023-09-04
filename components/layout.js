@@ -1,8 +1,9 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import styles from './layout.module.css';
+import ExportedImage from 'next-image-export-optimizer';
+import profilePic from 'public/images/avatar.png';
 
 var siteTitle = "Tiffany Rossi - Desenvolvedora";
 var isHome = true;
@@ -16,7 +17,7 @@ export default function Layout({ children, isPost, siteTitle, isHome }) {
 
         <div className={styles.container}>
             <Head>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="favicon.ico" />
                 <meta
                 name="description"
                 content={siteDescription}
@@ -28,9 +29,10 @@ export default function Layout({ children, isPost, siteTitle, isHome }) {
             </Head>
 
             <header className={styles.header}>
-                <Image
+                <ExportedImage
                     priority
-                    src="/images/avatar.png"
+                    src={profilePic}
+                    placeholder="empty"
                     className={utilStyles.borderCircle}
                     width={85}
                     height={85}
