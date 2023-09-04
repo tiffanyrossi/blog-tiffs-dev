@@ -21,6 +21,6 @@ tags:
 
 ## arquitetura do request/response
 - **endpoint**: url onde o server rest está executando as solicitações, para onde o cliente deverá apontar a chamada.
-- **método**: tipo de operação a ser feita (*método http).
+- **método**: tipo de operação a ser feita (*método http*).
 - **header**: contém parâmetros adicionais fornecidos para a comunicação.
 - **body**: contém as informações enviadas ou recebidas (*payload*)
