@@ -51,7 +51,7 @@ export default function TagsPage({ tags, postsByTag }) {
                 <h2 className={utilStyles.headingLg}>[posts por tag]</h2>
                   <ul className={utilStyles.list}>
                       {tags.map((tag) => (
-                          <li className={utilStyles.listItem} id={`${tag}`}>
+                          <li className={utilStyles.listItem} id={`${tag}`} key={`${tag}`}>
                               <span className={utilStyles.tagHeader}>
                               <Link href={`/tags/${tag}`}>{tag}</Link></span>
                               <ul className={utilStyles.list}>

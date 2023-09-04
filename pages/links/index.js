@@ -1,7 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import utilStyles from '../../styles/utils.module.css';
-import Link from 'next/link';
 import styles from '../../components/links.module.css';
 import { FaInstagram, FaGithub, FaTwitter, FaDev, FaLinkedin, FaStar, FaEnvelope, FaRegFile, FaFile } from 'react-icons/fa6';
 import ExportedImage from 'next-image-export-optimizer';

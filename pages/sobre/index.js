@@ -1,8 +1,7 @@
 import Layout from "../../components/layout";
-import { FaInstagram, FaJava, FaLinkedin, FaTwitter } from 'react-icons/fa6';
+import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa6';
 import styles from '../../components/layout.module.css';
 import Link from "next/link";
-import Image from "next/image";
 import ExportedImage from "next-image-export-optimizer";
 import photo from 'public/images/foto.jpeg';
 
