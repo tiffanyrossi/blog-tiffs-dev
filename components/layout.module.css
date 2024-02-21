@@ -40,4 +40,9 @@
   .content {
     margin-left: 0px;
   }
+
+  .profilePhoto {
+    width: 30%;
+    height: 30%;;
+  }
 }

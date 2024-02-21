@@ -45,6 +45,9 @@ export default function Sobre() {
             <p>
                 depois disso, desenvolvi toda a implementação das <strong>tags</strong>, dei uma caprichada no css, criei um agregador de links e estou planejando as próximas melhorias.
             </p>
+            <p>
+                avatar portrait created by <a href="https://picrew.me/share?cd=uHLKnG5frO" target="_blank">elliot @ picrew</a>.
+            </p>
 
         </Layout>
     )

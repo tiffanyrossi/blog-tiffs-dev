@@ -1,0 +1,23 @@
+{
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tiffsdevblog-prod-224647-authRole",
+      "UnauthRoleArn": "arn:aws:iam::932202070754:role/amplify-tiffsdevblog-prod-224647-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::932202070754:role/amplify-tiffsdevblog-prod-224647-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-tiffsdevblog-prod-224647-deployment",
+      "UnauthRoleName": "amplify-tiffsdevblog-prod-224647-unauthRole",
+      "StackName": "amplify-tiffsdevblog-prod-224647",
+      "StackId": "arn:aws:cloudformation:us-east-1:932202070754:stack/amplify-tiffsdevblog-prod-224647/3ef5b5a0-4c57-11ee-85e4-0e8d5aaebaf3",
+      "AmplifyAppId": "d16prpxy47aa5y"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d16prpxy47aa5y",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

@@ -1,10 +1,9 @@
 import Head from 'next/head';
 import utilStyles from '../../styles/utils.module.css';
 import styles from '../../components/links.module.css';
-import { FaInstagram, FaGithub, FaTwitter, FaDev, FaLinkedin, FaStar, FaEnvelope, FaRegFile, FaFile } from 'react-icons/fa6';
+import { FaInstagram, FaGithub, FaTwitter, FaDev, FaLinkedin, FaStar, FaEnvelope, FaFile } from 'react-icons/fa6';
 import ExportedImage from 'next-image-export-optimizer';
-import profilePic from 'public/images/avatar.png';
-
+import profilePic from 'public/images/avatar_3.png';
 
 export const siteDescription = "";
 export const siteName = "Tiffany Rossi - Desenvolvedora";
@@ -38,10 +37,10 @@ export default function MeusLinks() {
                 <h1 className={styles.headingLg}>Tiffany Rossi</h1>
                 <h2 className={styles.headingMd}>Desenvolvedora Full-Stack</h2>
                 <ul className={utilStyles.list}>
-                    <li className={utilStyles.listItem}><a href="https://instagram.com/tiffsrc" target="_blank"><FaInstagram className={styles.pinkIcon} /></a></li>
-                    <li className={utilStyles.listItem}><a href="https://twitter.com/tiffsrc" target="_blank"><FaTwitter className={styles.pinkIcon} /></a></li>
-                    <li className={utilStyles.listItem}><a href="https://linkedin.com/in/tiffanyrossi" target="_blank"><FaLinkedin className={styles.pinkIcon} /></a></li>
-                    <li className={utilStyles.listItem}><a href="https://github.com/tiffanyrossi" target="_blank"><FaGithub className={styles.pinkIcon} /></a></li>
+                    <li className={utilStyles.menuItem}><a href="https://instagram.com/tiffsrc" target="_blank"><FaInstagram className={styles.pinkIcon} /></a></li>
+                    <li className={utilStyles.menuItem}><a href="https://twitter.com/tiffsrc" target="_blank"><FaTwitter className={styles.pinkIcon} /></a></li>
+                    <li className={utilStyles.menuItem}><a href="https://linkedin.com/in/tiffanyrossi" target="_blank"><FaLinkedin className={styles.pinkIcon} /></a></li>
+                    <li className={utilStyles.menuItem}><a href="https://github.com/tiffanyrossi" target="_blank"><FaGithub className={styles.pinkIcon} /></a></li>
                 </ul>   
             </header>
 
@@ -68,14 +67,20 @@ export default function MeusLinks() {
                                 <FaDev className={styles.socialIcon} /> DEV.TO
                             </li>
                         </a>
-                        <a href="mailto:tiffsdev@gmail.com" target="_blank">
+                        <a href="mailto:tiffanyrossi@gmail.com" target="_blank">
                             <li>
                                 <FaEnvelope className={styles.socialIcon} /> E-mail
                             </li>
                         </a>
-                        <a href="/cv" target="_blank">
+                        <a href="https://drive.google.com/file/d/1EZOr2xa3reyVQEZ9TIKrxl71cHPVuaBi/view?usp=drive_link" target="_blank">
                             <li>
-                                <FaFile className={styles.socialIcon} /> CV
+                                <FaFile className={styles.socialIcon} /> Currículo
+                            </li>
+                        </a>
+
+                        <a href="https://drive.google.com/file/d/1OGCbzMLxi2y94Vfn1U2nDSq3HMmwQ4wP/view?usp=drive_link" target="_blank">
+                            <li>
+                                <FaFile className={styles.socialIcon} /> CV - English
                             </li>
                         </a>
                         

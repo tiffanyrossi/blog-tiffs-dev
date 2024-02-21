@@ -30,7 +30,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const tags = ['java', 'javascript', 'livros', 'algoritmos', 'api rest', 'git', 'aws', 'restjs'];
+  const tags = ['java', 'javascript', 'livros', 'algoritmos', 'api rest', 'git', 'aws', 'restjs', 'estudos', 'planejamento'];
   const paths = tags.map((tag) => ({
     params: { tag },
   }));  
@@ -48,7 +48,7 @@ export default function Tags({ tag, posts }) {
 
             <ul className={utilStyles.list}>
             {posts.map((post) => (
-                <li className={utilStyles.listItem} key={post.slug}>
+                <li className={utilStyles.postItem} key={post.slug}>
                 <Link href={`/posts/${post.slug}`}>{post.frontmatter.title}</Link>
                 <br />
                 <small className={utilStyles.lightText}>
