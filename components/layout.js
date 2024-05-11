@@ -3,7 +3,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import styles from './layout.module.css';
 import ExportedImage from 'next-image-export-optimizer';
-import profilePic from 'public/images/avatar_3.png';
+import profilePic from './../public/images/profile.png';
 
 var siteTitle = "Tiffany Rossi - Desenvolvedora";
 var isHome = true;
@@ -30,26 +30,29 @@ export default function Layout({ children, isPost, siteTitle, isHome }) {
                 <title>{!isHome ? `${siteTitle} - Tiffany Rossi` : 'Tiffany Rossi - Desenvolvedora'}</title>
             </Head>
 
-            <header className={styles.header}>
-                <ExportedImage
-                    priority
-                    src={profilePic}
-                    placeholder="empty"
-                    className={utilStyles.borderCircle}
-                    width={85}
-                    height={85}
-                    alt="tiffs.dev"
-                />
-                <h1 className={utilStyles.heading2Xl}>{siteName}</h1>
-                <ul className={utilStyles.list}>
-                    <li className={utilStyles.menuItem}>[<Link href="/">home</Link>]</li>
-                    <li className={utilStyles.menuItem}>[<Link href="/sobre">sobre</Link>]</li>
-                    <li className={utilStyles.menuItem}>[<Link href="/tags">tags</Link>]</li>
-                    <li className={utilStyles.menuItem}>[<Link href="/links" target="_blank">links</Link>]</li>
-                </ul>
-            </header>
+            <div className={styles.sidebar}>
+                <header className={styles.header}>
+                    <ExportedImage
+                        priority
+                        src={profilePic}
+                        placeholder="empty"
+                        className={utilStyles.borderCircle}
+                        width={75}
+                        height={75}
+                        alt="tiffs.dev"
+                    />
+                    <h1 className={utilStyles.headingLg}>{siteName}</h1>
+                </header>
 
-            <main>
+                <ul className={utilStyles.mainMenu}>
+                    <li>[<Link href="/">home</Link>]</li>
+                    <li>[<Link href="/sobre">sobre</Link>]</li>
+                    <li>[<Link href="/links" target="_blank">links</Link>]</li>
+                    <li>[<Link href="/tags">tags</Link>]</li>
+                </ul>
+            </div>
+
+            <main className={styles.content}>
                 {children}
                 {isPost && (
                 <div className={styles.backToHome}>
@@ -57,14 +60,16 @@ export default function Layout({ children, isPost, siteTitle, isHome }) {
                     <Link href="/">← voltar para os posts</Link>
                 </div>    
                 )}
-            </main>
 
             <footer className={styles.footer}>
                 <div className={utilStyles.footerText}>
                     <hr />
                     tiffany rossi ☠️ {currentYear}
                 </div>
-            </footer>      
+            </footer>
+
+            </main>
+
 
         </div>
 

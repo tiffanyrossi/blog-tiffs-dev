@@ -1,7 +1,6 @@
 .container {
-  max-width: 60rem;
   padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  height: 100%;
 }
 
 .header {
@@ -16,7 +15,20 @@
   flex-direction: column;
   text-align: center;
 }
-  
+
+.sidebar {
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100vh;
+  overflow: auto;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
 .backToHome {
   display: flex;
   flex-direction: column;
@@ -44,5 +56,24 @@
   .profilePhoto {
     width: 30%;
     height: 30%;;
+  }
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
   }
 }

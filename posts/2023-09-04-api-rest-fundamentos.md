@@ -2,10 +2,11 @@
 title: 'API REST - fundamentos'
 author: 'Tiffany Rossi'
 date: '2023-09-04'
+theme: 'REST APIs'
 sourcetype: curso
 sourcename: REST API's RESTFul do 0 à AWS, com Spring Boot, Java e Docker
 sourceauthor: Leandro Costa
-sourc URL: HTTPs://www.udemy.com/course/restful-apis-do-0-a-nuvem-com-springboot-e-docker/
+sourceURL: HTTPs://www.udemy.com/course/restful-apis-do-0-a-nuvem-com-springboot-e-docker/
 tags:
     - api rest
     - estudos

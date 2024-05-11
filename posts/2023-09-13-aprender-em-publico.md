@@ -2,6 +2,7 @@
 title: 'aprender em público'
 author: 'Tiffany Rossi'
 date: '2023-09-13'
+theme: 'etc'
 sourcetype: 'texto'
 sourcename: 'Learn in Public'
 sourceauthor: 'swyx'

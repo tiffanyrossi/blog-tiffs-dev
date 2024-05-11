@@ -1,9 +1,9 @@
 import Layout from "../../components/layout";
-import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa6';
+import { FaLinkedin, FaTwitter } from 'react-icons/fa6';
 import styles from '../../components/layout.module.css';
 import Link from "next/link";
 import ExportedImage from "next-image-export-optimizer";
-import photo from 'public/images/foto.jpeg';
+import photo from './../../public/images/foto.jpeg';
 
 const siteTitle = "Sobre";
 
@@ -53,7 +53,7 @@ export default function Sobre() {
                 depois disso, desenvolvi toda a implementação das <strong>tags</strong>, dei uma caprichada no css, criei um agregador de links e estou planejando as próximas melhorias.
             </p>
             <p>
-                avatar portrait created by <a href="https://picrew.me/share?cd=uHLKnG5frO" target="_blank">elliot @ picrew</a>.
+                avatar portrait created by <a href="http://instagram.com/bananahkim" target="_blank">@bananahkim</a>.
             </p>
 
         </Layout>

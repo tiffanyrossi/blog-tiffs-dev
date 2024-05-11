@@ -47,6 +47,10 @@ blockquote {
   text-align: justify;
 }
 
+pre {
+  border: 5px #000 solid,
+}
+
 *::selection {
   background: deeppink;
   color: #ffffff;

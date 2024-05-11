@@ -42,7 +42,17 @@
 .list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin:2px;
+}
+
+.mainMenu {
+  list-style: none;
+  border-top: 5px #000 dotted;
+  padding: 5px;
+}
+
+.mainMenuItem {
+  float: left;
 }
 
 .menuItem {

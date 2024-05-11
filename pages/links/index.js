@@ -3,7 +3,7 @@ import utilStyles from '../../styles/utils.module.css';
 import styles from '../../components/links.module.css';
 import { FaInstagram, FaGithub, FaTwitter, FaDev, FaLinkedin, FaStar, FaEnvelope, FaFile } from 'react-icons/fa6';
 import ExportedImage from 'next-image-export-optimizer';
-import profilePic from 'public/images/avatar_3.png';
+import profilePic from '../../public/images/profile.png';
 
 export const siteDescription = "";
 export const siteName = "Tiffany Rossi - Desenvolvedora";

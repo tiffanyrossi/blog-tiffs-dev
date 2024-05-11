@@ -2,38 +2,43 @@ import Layout from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from './../lib/posts';
 import Link from 'next/link';
-import Date from '../components/date';
+import { getPostsByTheme } from '../lib/themes';
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const postsByTheme = getPostsByTheme().postsByTheme;
+  const themes = getPostsByTheme().themes;
+
   return {
     props: {
-      allPostsData,
+      themes,
+      postsByTheme,
     },
   };
 }
 
-export default function Home({allPostsData}) {
+export default function Home({postsByTheme, themes}) {
+
   return (
     <Layout isHome>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>[blog]</h2>
-
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title, tags }) => (
-            <li className={utilStyles.postItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-              {tags.map((tag) => (
-                    <Link className={utilStyles.tagItem} key={tag} href={`/tags/${tag}`}>{tag}</Link>
-                  ))}
-            </li>
-          ))}
-        </ul>
-      </section>
+      <ul className={utilStyles.list}>
+        {themes.map((theme) => (
+            <li className={utilStyles.postItem} id={`${theme}`} key={`${theme}`}>
+              <span className={utilStyles.tagHeader}>
+                <Link href={`/themes/${theme}`}>{theme}</Link>
+              </span>
+              <ul className={utilStyles.list}>
+                  {postsByTheme[theme].map((post) => (
+                    <li key={post.slug} className={utilStyles.postItem}>
+                        <Link href={`/posts/${post.slug}`}>
+                            {post.frontmatter.title}
+                        </Link>
+                    </li>
+                    ))}
+              </ul>
+          </li>
+      ))}
+        
+      </ul>
 
     </Layout>
   );
